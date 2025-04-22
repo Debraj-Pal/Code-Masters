@@ -1,0 +1,199 @@
+/* body( the whole background) */
+body 
+ {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #000014, #0a0a23, #2e2e56, #1b3d63);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease-in-out infinite;
+  }
+/* starry background */
+@keyframes gradientShift
+ {
+    0% 
+    {
+      background-position: 0% 50%;
+    }
+    50% 
+    {
+      background-position: 100% 50%;
+    }
+    100% 
+    {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes slideIn 
+  {
+    0% 
+    {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% 
+    {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+canvas 
+  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }  
+
+
+/* header */
+.text-center h1
+{
+    color: white;
+}  
+/* form body */
+.row {
+  margin: 0 auto !important; /* Center the form */
+  background: #191936;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rebeccapurple;
+  max-width: 600px; /* Makes form more compact */
+}
+/* form fields */
+.form-label
+{
+  color: white;
+}
+
+.form-control
+{
+  background: #1b2a43; 
+  color: #f1f1f1;
+}
+
+.row input::placeholder,
+.row textarea::placeholder 
+{
+  color: #b3b3cc; 
+}
+/* form fields */
+.row input,
+.row textarea,
+.row button 
+{
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+}
+/*submit button */
+.fet1 
+{
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  box-shadow: green;
+  width: 100%;
+}
+.fet1 button:hover {
+    background-color: darkorchid;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+}
+.fet1 button:active {
+      transform: scale(1);
+      box-shadow: 0 0 5px rebeccapurple;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      background-color: rebeccapurple;
+      border: 1px solid white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      transition: transform 0.1s ease;
+      transition: box-shadow 0.3s ease;
+}
+/* forgot password */
+.forgot-password a{
+    color: rebeccapurple;
+    margin-left: 24rem;
+}
+/* sign in */
+.acc a{
+  color: rebeccapurple;
+} 
+.acc p{
+    color: white;
+}
+.text-center h5
+{
+  color: white;
+}
+/* Button styles for social media platforms */  
+/* Social buttons row */
+.col-md-6 {
+  padding: 0 0.5rem; /* Adds spacing between buttons */
+}
+
+/* Google button styles */
+.google-btn {
+  background: white;
+  color: #5f6368;
+  border: 1px solid #dadce0;
+}
+
+.google-icon {
+  background: conic-gradient(
+    from -45deg, 
+    #ea4335 110deg, 
+    #4285f4 90deg 180deg, 
+    #34a853 180deg 270deg, 
+    #fbbc05 270deg
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Facebook button */
+.btn-primary {
+  background-color: #4267B2;
+  border: none;
+}
+
+/*toggle password */
+/* Eye toggle icon */
+.toggle-password {
+  position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #6c757d;
+    user-select: none;
+    z-index: 5;
+    background-color: none;
+    padding-left: 4px;
+}
+.toggle-password:hover {
+  color: #343a40;
+}
+
+
+
